@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>NFT</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+    .attribution { 
+      color: white;
+      font-size: 11px; 
+      text-align: center; 
+    }
+    .attribution a { 
+      color: hsl(194, 79%, 64%); 
+    }
+  </style>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              screens: {
+                mobile: "375px",
+                desktop: "1440px",
+              },
+              colors: {
+                sb: "hsl(215, 51%, 70%)",
+                c: "hsl(178, 100%, 50%)",
+                vdb_bg: "hsl(217, 54%, 11%)",
+                vdb_card: "hsl(216, 50%, 16%)",
+                vdb_l: "hsl(215, 32%, 27%)",
+                w: "hsl(0, 0%, 100%)",
+              },
+              fontFamily: {
+                primary: ["Outfit", "sans-serif"],
+              },
+              fontSize: {
+                body: "18px",
+              },
+            },
+          },
+        };
+      </script>
+</head>
+<body class="font-primary text-sb bg-vdb_bg flex flex-col justify-center items-center h-[100dvh]">
+  <main class="container  bg-vdb_card flex flex-col justify-center items-center rounded-[1rem] w-[18rem]">
+    <div class="group relative">
+      <img class="h-full rounded-[2rem] mx-auto p-5 " src="./images/image-equilibrium.jpg" alt="equilibrium">
+      <div class="absolute top-4 left-4 w-[16rem] rounded-[1rem] h-0 flex flex-col justify-center items-center
+       bg-c opacity-0 group-hover:h-[16rem] group-hover:opacity-50 group-hover:cursor-pointer">
+        <img class="opacity-100" src="./images/icon-view.svg" alt="View logo">
+      </div>
+    </div>
+    <div class="text-start px-5">
+      <h1 class="text-xl text-w hover:text-c hover:cursor-pointer">Equilibrium #3429</h1>
+      <p class="text-[.8rem] py-2">Our Equilibrium collection promotes balance and calm.</p>
+    </div>
+    <div class="flex justify-between w-5/6 py-4">
+      <div class="flex">
+        <img class="w-fit h-full" src="./images/icon-ethereum.svg" alt="Ethereum Logo">
+        <h2 class="text-c px-2">0.041 ETH</h2>       
+      </div>
+      <div class="flex">
+        <img class="w-fit h-full" src="./images/icon-clock.svg" alt="Clock Logo">
+        <h2 class=" px-2">3 days left</h2>
+      </div>
+    </div>
+    <hr class="border-vdb_l border-full w-5/6">
+    <div class="flex  items-center w-5/6 py-4">
+      <img class="w-[2rem] border-2 border-w rounded-full" src="./images/image-avatar.png" alt="Jules Wyvern picture">
+      <h2 class="px-3 text-sm">
+        Creation of 
+        <span class="text-w hover:text-c hover:cursor-pointer"> Jules Wyvern</span>
+      </h2>
+    </div>
+  </main>
+  <footer class="attribution sm:text-lg">
+    Challenge by 
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    <br>Coded by 
+    <a href="https://www.frontendmentor.io/profile/Ganesh-G0" target="_blank">Ganesh</a>
+  </footer>
+</body>
+</html>
